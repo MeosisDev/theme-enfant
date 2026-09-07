@@ -1,0 +1,102 @@
+
+        .faq-<?php echo esc_attr($atts['id']); ?> {
+            background: var(--e-global-color-background, #ffffff);
+            padding: 60px 20px;
+            font-family: var(--e-global-typography-primary-font-family, Georgia), serif;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .faq-title {
+            text-align: center;
+            color: var(--faq-titre-couleur, var(--e-global-color-primary, #6f9284));
+            font-size: var(--faq-titre-taille, 2.4rem);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: var(--e-global-typography-secondary-font-family, 'Playfair Display'), Georgia, serif;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .faq-intro {
+            text-align: center;
+            color: var(--faq-intro-couleur, var(--e-global-color-text, #4a4a4a));
+            font-family: var(--e-global-typography-tertiary-font-family, Arial), sans-serif;
+            font-size: var(--faq-intro-taille, 1rem);
+            margin-bottom: 10px;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .faq-pied {
+            text-align: center;
+            color: var(--faq-pied-couleur, var(--e-global-color-secondary, #a3a3a3));
+            font-family: var(--e-global-typography-tertiary-font-family, Arial), sans-serif;
+            font-size: var(--faq-pied-taille, 0.85rem);
+            margin-bottom: 45px;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .flip-card {
+            perspective: 1200px;
+            height: 220px;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .flip-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform .6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .flip-card.flipped .flip-inner {
+            transform: rotateY(180deg);
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .flip-front,
+        .faq-<?php echo esc_attr($atts['id']); ?> .flip-back {
+            position: absolute;
+            inset: 0;
+            backface-visibility: hidden;
+            border-radius: var(--faq-arrondi, 14px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid var(--e-global-color-border, #e3d4e8);
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .flip-front {
+            background: var(--faq-couleur-fond, var(--e-global-color-secondary, #f2e8db));
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .flip-back {
+            background: var(--faq-couleur-fond-verso, var(--e-global-color-primary, #6f9284));
+            transform: rotateY(180deg);
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .card-emoji {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .card-question {
+            margin: 0;
+            color: var(--e-global-color-text-dark, #3f5c50);
+            font-size: 1.05rem;
+            font-family: var(--e-global-typography-secondary-font-family, 'Playfair Display'), Georgia, serif;
+        }
+
+        .faq-<?php echo esc_attr($atts['id']); ?> .card-reponse {
+            margin: 0;
+            color: var(--e-global-color-white, #fff);
+            font-family: var(--e-global-typography-tertiary-font-family, Arial), sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    
