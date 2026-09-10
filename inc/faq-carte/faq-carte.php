@@ -21,6 +21,13 @@ function faq_acf_local_fields() {
         'title' => 'FAQ cartes à retourner',
         'fields' => array(
             array(
+                'key' => 'field_faq_tab_carte',
+                'label' => 'FAQ Cartes',
+                'name' => '',
+                'type' => 'tab',
+                'placement' => 'top',
+            ),
+            array(
                 'key' => 'field_faq_shortcode_info',
                 'label' => 'Shortcode à utiliser',
                 'name' => 'faq_shortcode_info',
@@ -171,7 +178,7 @@ function faq_acf_local_fields() {
         ),
         'menu_order' => 0,
         'position' => 'normal',
-        'style' => 'default',
+        'style' => 'seamless',
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
