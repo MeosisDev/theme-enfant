@@ -21,10 +21,11 @@ Thème enfant WordPress basé sur **Hello Elementor**, développé par [Meosis](
 │   │   ├── faq-carte.php     # Champs ACF + shortcode [faq_cartes_a_retourner]
 │   │   ├── faq-carte.css
 │   │   └── faq-carte.js
-│   └── faq-sms/              # Module FAQ en conversation façon SMS
-│       ├── faq-sms.php       # Champs ACF + shortcode [faq_sms]
-│       ├── faq-sms.css
-│       └── faq-sms.js
+│   ├── faq-sms/              # Module FAQ en conversation façon SMS
+│   │   ├── faq-sms.php       # Champs ACF + shortcode [faq_sms]
+│   │   ├── faq-sms.css
+│   │   └── faq-sms.js
+│   └── faq-admin-tabs.php    # Onglets natifs WP sur la page Informations > FAQ
 ├── diapo/                   # Module diaporama / galerie
 │   ├── diapo.php
 │   ├── gallery.php

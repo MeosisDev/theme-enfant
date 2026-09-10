@@ -21,13 +21,6 @@ function faq_sms_acf_local_fields() {
         'title' => 'FAQ SMS (conversation)',
         'fields' => array(
             array(
-                'key' => 'field_faq_tab_sms',
-                'label' => 'FAQ SMS',
-                'name' => '',
-                'type' => 'tab',
-                'placement' => 'top',
-            ),
-            array(
                 'key' => 'field_faq_sms_shortcode_info',
                 'label' => 'Shortcode à utiliser',
                 'name' => 'faq_sms_shortcode_info',

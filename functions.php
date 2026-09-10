@@ -30,3 +30,8 @@ require_once(get_stylesheet_directory() . '/inc/faq-carte/faq-carte.php');
     FAQ SMS (shortcode [faq_sms])
 ******************************************************************************/
 require_once(get_stylesheet_directory() . '/inc/faq-sms/faq-sms.php');
+
+/******************************************************************************
+    ONGLETS ADMIN POUR LA PAGE INFORMATIONS > FAQ
+******************************************************************************/
+require_once(get_stylesheet_directory() . '/inc/faq-admin-tabs.php');
