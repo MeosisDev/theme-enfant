@@ -7,6 +7,7 @@ Thème enfant WordPress basé sur **Hello Elementor**, développé par [Meosis](
 - WordPress avec le thème parent **Hello Elementor**
 - Elementor
 - [Advanced Custom Fields (ACF)](https://www.advancedcustomfields.com/) — requis pour le module FAQ
+- [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/) — requis pour le CPT "Informations" (`post_type=informations`), qui accueille le sous-menu "Réglages" du thème
 
 ## Structure du projet
 
@@ -33,7 +34,7 @@ Thème enfant WordPress basé sur **Hello Elementor**, développé par [Meosis](
 │   │   ├── faq-ticket.php    # Champs ACF + shortcode [faq_ticket] + JSON-LD FAQPage
 │   │   ├── faq-ticket.css
 │   │   └── faq-ticket.js
-│   └── faq-admin-tabs.php    # Onglets natifs WP sur la page Informations > FAQ
+│   └── faq-admin-tabs.php    # Onglets natifs WP sur la page de menu FAQ
 ├── diapo/                   # Module diaporama / galerie
 │   ├── diapo.php
 │   ├── gallery.php
@@ -64,3 +65,4 @@ Thème enfant WordPress basé sur **Hello Elementor**, développé par [Meosis](
 1. Copier le dossier du thème dans `wp-content/themes/`
 2. Activer le thème parent **Hello Elementor**, puis activer ce thème enfant depuis l'administration WordPress
 3. Installer et activer le plugin **ACF**
+4. Installer et activer **Custom Post Type UI**, puis créer un CPT de slug `informations` (le thème y rattache automatiquement le sous-menu "Réglages")

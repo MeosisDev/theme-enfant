@@ -121,28 +121,36 @@ if( !function_exists( 'delete_meosis_menu_items' ) ){
 
 
 /******************************************************************************
-    AJOUT DU MENU D'INFORMATIONS
+    AJOUT DES RÉGLAGES SOUS LE CPT "INFORMATIONS" (créé via CPT UI)
+******************************************************************************/
+
+// Le menu "Informations" est géré par CPT UI (post_type = informations).
+// Ces réglages généraux ACF viennent s'ajouter en sous-menu de ce CPT, plutôt
+// que de créer leur propre page "Informations" séparée (voir historique du thème).
+
+if( function_exists('acf_add_options_sub_page') ) {
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Réglages',
+        'menu_title'    => 'Réglages',
+        'menu_slug'     => 'theme-general-settings',
+        'parent_slug'   => 'edit.php?post_type=informations',
+        'capability'    => 'edit_posts',
+    ));
+}
+
+/******************************************************************************
+    AJOUT DU MENU FAQ (page de premier niveau)
 ******************************************************************************/
 
 if( function_exists('acf_add_options_page') ) {
     acf_add_options_page(array(
-        'page_title'    => 'Informations',
-        'menu_title'    => 'Informations',
-        'menu_slug'     => 'theme-general-settings',
-        'capability'    => 'edit_posts',
-        'redirect'      => false,
-        'icon_url'      => 'dashicons-admin-users',
-        'position'      => 20
-    ));
-}
-
-if( function_exists('acf_add_options_sub_page') ) {
-    acf_add_options_sub_page(array(
         'page_title'    => 'Réglages FAQ',
         'menu_title'    => 'FAQ',
         'menu_slug'     => 'theme-faq-settings',
-        'parent_slug'   => 'theme-general-settings',
         'capability'    => 'edit_posts',
+        'redirect'      => false,
+        'icon_url'      => 'dashicons-editor-help',
+        'position'      => 21,
     ));
 }
 
