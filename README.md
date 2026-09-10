@@ -29,6 +29,10 @@ Thème enfant WordPress basé sur **Hello Elementor**, développé par [Meosis](
 │   │   ├── faq-horloge.php   # Champs ACF + shortcode [faq_horloge]
 │   │   ├── faq-horloge.css
 │   │   └── faq-horloge.js
+│   ├── faq-ticket/           # Module FAQ façon fiches de comptoir (accordéon)
+│   │   ├── faq-ticket.php    # Champs ACF + shortcode [faq_ticket] + JSON-LD FAQPage
+│   │   ├── faq-ticket.css
+│   │   └── faq-ticket.js
 │   └── faq-admin-tabs.php    # Onglets natifs WP sur la page Informations > FAQ
 ├── diapo/                   # Module diaporama / galerie
 │   ├── diapo.php
@@ -51,6 +55,7 @@ Thème enfant WordPress basé sur **Hello Elementor**, développé par [Meosis](
 - **FAQ à cartes retournables** via le shortcode `[faq_cartes_a_retourner]` (champs configurables dans ACF)
 - **FAQ en conversation façon SMS** via le shortcode `[faq_sms]` (questions/réponses, couleurs et bouton de RDV configurables dans ACF)
 - **FAQ façon cadran d'horloge** via le shortcode `[faq_horloge]` (questions réparties automatiquement autour du cadran, couleurs configurables dans ACF)
+- **FAQ façon fiches de comptoir** via le shortcode `[faq_ticket]` (accordéon avec étiquette/émoji par fiche, JSON-LD FAQPage généré automatiquement, couleurs configurables dans ACF)
 - **Diaporama / galerie** (`diapo/`)
 - Enqueue automatique des styles et scripts du thème (jQuery, Slick, GSAP, Lenis...)
 

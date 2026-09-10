@@ -1,0 +1,113 @@
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> {
+            font-family: 'Poppins', sans-serif;
+            background: var(--faqticket-couleur-fond-section, #ffffff);
+            padding: 70px 40px;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-header {
+            max-width: 820px;
+            margin: 0 auto 50px auto;
+            text-align: center;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-eyebrow {
+            color: var(--faqticket-couleur-eyebrow, #802E35);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0 0 16px 0;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-titre {
+            font-family: var(--e-global-typography-secondary-font-family, 'Playfair Display'), serif;
+            font-weight: 700;
+            font-size: 34px;
+            color: var(--faqticket-couleur-titre, #363636);
+            margin: 0 0 14px 0;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-titre em {
+            color: var(--faqticket-couleur-titre-accent, #802E35);
+            font-style: italic;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-intro {
+            color: var(--faqticket-couleur-intro, #5a5a5a);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-cards {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-card {
+            background: var(--faqticket-couleur-fond-carte, #fffaf3);
+            border: 1px solid var(--faqticket-couleur-bordure-carte, #e7dccb);
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-tag {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--faqticket-couleur-ruban-fond, #881F28);
+            color: var(--faqticket-couleur-ruban-texte, #fff);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            padding: 5px 12px 5px 10px;
+            clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 22px 24px;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-icon {
+            font-size: 22px;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-question {
+            flex: 1;
+            font-family: var(--e-global-typography-secondary-font-family, 'Playfair Display'), serif;
+            font-weight: 600;
+            font-size: 17px;
+            color: var(--faqticket-couleur-question, #363636);
+            margin: 0;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-plus {
+            font-size: 20px;
+            color: var(--faqticket-couleur-icone-plus, #881F28);
+            transition: transform 0.25s ease;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-card.is-open .faqticket-plus {
+            transform: rotate(45deg);
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faqticket-<?php echo esc_attr($atts['id']); ?> .faqticket-answer p {
+            margin: 0;
+            padding: 0 24px 22px 62px;
+            color: var(--faqticket-couleur-reponse, #5a5a5a);
+            font-size: 14px;
+            line-height: 1.6;
+        }
