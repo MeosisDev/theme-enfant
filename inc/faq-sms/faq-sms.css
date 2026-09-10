@@ -1,0 +1,196 @@
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> {
+            background: var(--faqsms-couleur-fond-section, var(--e-global-color-secondary, #f2e8db));
+            padding: 60px 20px;
+            font-family: var(--e-global-typography-primary-font-family, Georgia), serif;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-title {
+            text-align: center;
+            color: var(--faqsms-titre-couleur, var(--e-global-color-primary, #6f9284));
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: var(--e-global-typography-secondary-font-family, 'Playfair Display'), Georgia, serif;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-intro {
+            text-align: center;
+            color: var(--faqsms-intro-couleur, var(--e-global-color-text, #4a4a4a));
+            font-family: var(--e-global-typography-tertiary-font-family, Arial), sans-serif;
+            font-size: 1rem;
+            margin-bottom: 45px;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-widget {
+            max-width: 560px;
+            margin: 0 auto;
+            background: var(--faqsms-couleur-fond-widget, #fff);
+            border-radius: 18px;
+            border: 1px solid var(--faqsms-couleur-bordure, #e3d4e8);
+            padding: 20px 20px 24px;
+            box-shadow: 0 4px 18px rgba(63,92,80,0.08);
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 14px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--faqsms-couleur-fond-section, #f2e8db);
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--faqsms-couleur-accent, #6f9284);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-nom {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--e-global-color-text-dark, #3f5c50);
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-statut {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: #7f9d90;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-puce {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--faqsms-couleur-accent, #6f9284);
+            margin-right: 5px;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-thread {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            min-height: 50px;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-bulle-row {
+            display: flex;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-bulle-row.faqsms-user {
+            justify-content: flex-end;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-bulle-row.faqsms-bot {
+            justify-content: flex-start;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-bulle {
+            max-width: 78%;
+            padding: 10px 14px;
+            border-radius: 16px;
+            font-family: Arial, sans-serif;
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-bulle.faqsms-user {
+            background: var(--faqsms-couleur-accent, #6f9284);
+            color: #fff;
+            border-bottom-right-radius: 4px;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-bulle.faqsms-bot {
+            background: var(--faqsms-couleur-fond-bulle, #f2e8db);
+            color: #3a3a3a;
+            border: 1px solid var(--faqsms-couleur-bordure, #e3d4e8);
+            border-bottom-left-radius: 4px;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-bulle.faqsms-typing {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 12px 14px;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-typing-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #9a9a9a;
+            animation: faqsms-bounce-<?php echo esc_attr($atts['id']); ?> 1s infinite ease-in-out;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-typing-dot:nth-child(2) { animation-delay: 0.15s; }
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes faqsms-bounce-<?php echo esc_attr($atts['id']); ?> {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+            30% { transform: translateY(-4px); opacity: 1; }
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-chip {
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+            padding: 7px 14px;
+            border-radius: 18px;
+            border: 1px solid var(--faqsms-couleur-accent, #6f9284);
+            background: var(--faqsms-couleur-fond-widget, #fff);
+            color: var(--e-global-color-text-dark, #3f5c50);
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-chip:hover {
+            background: var(--faqsms-couleur-accent, #6f9284);
+            color: #fff;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-done {
+            display: none;
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+            color: #8a8a8a;
+            text-align: center;
+            margin: 16px 0 0;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-cta {
+            display: none;
+            text-align: center;
+            margin-top: 14px;
+        }
+
+        .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-cta a {
+            display: inline-block;
+            background: var(--faqsms-couleur-accent, #6f9284);
+            color: #fff;
+            padding: 10px 26px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }

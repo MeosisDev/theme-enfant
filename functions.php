@@ -25,3 +25,8 @@ require_once(get_stylesheet_directory() .'/meo-config/meo-functions.php');
     FAQ CARTE (shortcode [faq_carte_à_retourner])
 ******************************************************************************/
 require_once(get_stylesheet_directory() . '/inc/faq-carte/faq-carte.php');
+
+/******************************************************************************
+    FAQ SMS (shortcode [faq_sms])
+******************************************************************************/
+require_once(get_stylesheet_directory() . '/inc/faq-sms/faq-sms.php');

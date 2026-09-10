@@ -17,10 +17,14 @@ Thème enfant WordPress basé sur **Hello Elementor**, développé par [Meosis](
 │   ├── meo-functions.php    # Enqueue des styles/scripts, pages enfants, ACF...
 │   └── meo-avis.php          # Gestion des avis clients
 ├── inc/
-│   └── faq-carte/            # Module FAQ à cartes retournables
-│       ├── faq-carte.php     # Champs ACF + shortcode [faq_cartes_a_retourner]
-│       ├── faq-carte.css
-│       └── faq-carte.js
+│   ├── faq-carte/            # Module FAQ à cartes retournables
+│   │   ├── faq-carte.php     # Champs ACF + shortcode [faq_cartes_a_retourner]
+│   │   ├── faq-carte.css
+│   │   └── faq-carte.js
+│   └── faq-sms/              # Module FAQ en conversation façon SMS
+│       ├── faq-sms.php       # Champs ACF + shortcode [faq_sms]
+│       ├── faq-sms.css
+│       └── faq-sms.js
 ├── diapo/                   # Module diaporama / galerie
 │   ├── diapo.php
 │   ├── gallery.php
@@ -40,6 +44,7 @@ Thème enfant WordPress basé sur **Hello Elementor**, développé par [Meosis](
 
 - **Widget Elfsight** via le shortcode `[elfsight_shortcode]`
 - **FAQ à cartes retournables** via le shortcode `[faq_cartes_a_retourner]` (champs configurables dans ACF)
+- **FAQ en conversation façon SMS** via le shortcode `[faq_sms]` (questions/réponses, couleurs et bouton de RDV configurables dans ACF)
 - **Diaporama / galerie** (`diapo/`)
 - Enqueue automatique des styles et scripts du thème (jQuery, Slick, GSAP, Lenis...)
 
