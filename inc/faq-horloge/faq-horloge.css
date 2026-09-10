@@ -1,0 +1,111 @@
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> {
+            background: repeating-linear-gradient(90deg, var(--faqhorloge-couleur-rayure-1, #f2e8db), var(--faqhorloge-couleur-rayure-1, #f2e8db) 2px, var(--faqhorloge-couleur-rayure-2, #eee0cf) 2px, var(--faqhorloge-couleur-rayure-2, #eee0cf) 4px);
+            padding: 60px 20px;
+            font-family: var(--e-global-typography-primary-font-family, Georgia), serif;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-title {
+            text-align: center;
+            color: var(--faqhorloge-titre-couleur, var(--e-global-color-primary, #6f9284));
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-family: var(--e-global-typography-secondary-font-family, 'Playfair Display'), Georgia, serif;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-intro {
+            text-align: center;
+            color: var(--faqhorloge-intro-couleur, var(--e-global-color-text, #4a4a4a));
+            font-family: var(--e-global-typography-tertiary-font-family, Arial), sans-serif;
+            font-size: 1rem;
+            margin-bottom: 45px;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-cadran-wrap {
+            position: relative;
+            width: 320px;
+            height: 320px;
+            flex-shrink: 0;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-hand {
+            transition: transform .5s ease;
+            transform-origin: 160px 160px;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-labels {
+            position: absolute;
+            inset: 0;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-dot {
+            position: absolute;
+            transform: translate(-50%,-50%);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--faqhorloge-couleur-rayure-1, #f2e8db);
+            border: 2px solid var(--faqhorloge-couleur-accent, #6f9284);
+            color: var(--faqhorloge-couleur-aiguille, #3f5c50);
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background .2s, color .2s, transform .2s;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-dot.is-active {
+            background: var(--faqhorloge-couleur-accent, #6f9284);
+            color: #fff;
+            transform: translate(-50%,-50%) scale(1.15);
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-panel {
+            max-width: 340px;
+            min-height: 120px;
+            background: var(--faqhorloge-couleur-cadran-fond, #fff);
+            border: 1px solid var(--faqhorloge-couleur-bordure, #e3d4e8);
+            border-radius: 14px;
+            padding: 22px 26px;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-panel.is-visible {
+            opacity: 1;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-q {
+            margin: 0 0 10px;
+            font-size: 1.05rem;
+            color: var(--faqhorloge-couleur-aiguille, #3f5c50);
+            font-family: var(--e-global-typography-secondary-font-family, 'Playfair Display'), Georgia, serif;
+            font-weight: 600;
+        }
+
+        .faqhorloge-<?php echo esc_attr($atts['id']); ?> .faqhorloge-a {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--faqhorloge-couleur-texte-reponse, #4a4a4a);
+        }

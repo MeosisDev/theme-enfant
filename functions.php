@@ -32,6 +32,11 @@ require_once(get_stylesheet_directory() . '/inc/faq-carte/faq-carte.php');
 require_once(get_stylesheet_directory() . '/inc/faq-sms/faq-sms.php');
 
 /******************************************************************************
+    FAQ HORLOGE (shortcode [faq_horloge])
+******************************************************************************/
+require_once(get_stylesheet_directory() . '/inc/faq-horloge/faq-horloge.php');
+
+/******************************************************************************
     ONGLETS ADMIN POUR LA PAGE INFORMATIONS > FAQ
 ******************************************************************************/
 require_once(get_stylesheet_directory() . '/inc/faq-admin-tabs.php');
