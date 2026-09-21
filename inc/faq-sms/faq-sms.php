@@ -131,7 +131,7 @@ function faq_sms_acf_local_fields() {
                 'label' => 'Lien du bouton',
                 'name' => 'faq_sms_cta_lien',
                 'type' => 'url',
-                'default_value' => 'https://www.linstantcoiffure70.fr/contact.html',
+                 'default_value' => home_url('/contact.html'),
             ),
             array(
                 'key' => 'field_faq_sms_couleur_accent',
