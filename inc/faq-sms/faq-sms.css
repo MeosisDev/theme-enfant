@@ -161,6 +161,7 @@
             color: var(--e-global-color-text-dark, #3f5c50);
             cursor: pointer;
             transition: background 0.2s, color 0.2s;
+            white-space: normal;
         }
 
         .faqsms-<?php echo esc_attr($atts['id']); ?> .faqsms-chip:hover {
